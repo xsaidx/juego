@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Esquiva los Cocodrilos</title>
     <style>
         body {
@@ -93,6 +93,15 @@
             border: none;
             border-radius: 5px;
             margin: 0;
+        }
+
+        #gameCanvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #87CEEB; /* Un azul para el río */
+            max-width: 100vw;
+            max-height: 100vh;
+            touch-action: none; /* Crucial para evitar que el navegador interfiera con los toques */
         }
     </style>
 </head>
